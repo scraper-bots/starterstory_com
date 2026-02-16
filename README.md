@@ -1,4 +1,4 @@
-# Mortgage Partner Market Analysis — Azerbaijan 2025
+# Mortgage Partner Market Analysis — Azerbaijan 2026
 
 - > **Scope**: Four active mortgage lenders — PASHA Bank, ABB Home, Xalq Bank, and BirBank — and their full residential partner networks as of February 2026.
 - > **Data**: 136 partner entries across 4 banks, collected directly from each bank's partner portal.
