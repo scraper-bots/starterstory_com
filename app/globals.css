@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Global styles for the Skee-Ball arcade game
+   ───────────────────────────────────────────────────────────────────────── */
+
+:root {
+  --background: #06060f;
+  --foreground: #e0e0ff;
+}
+
+/* Prevent mobile rubber-band / overscroll */
+html, body {
+  overflow: hidden;
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Full-height fix (dvh units used in Tailwind classes too) */
+body {
+  height: 100dvh;
+  background: #06060f;
+  color: #e0e0ff;
+  font-family: 'Courier New', 'Courier', monospace;
+}
+
+/* Smooth font rendering */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+/* Remove default tap highlight on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0a0a1a; }
+::-webkit-scrollbar-thumb { background: #333355; border-radius: 2px; }

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Dark background -->
+  <rect width="64" height="64" rx="14" fill="#06060f"/>
+
+  <!-- Outer ring glow -->
+  <circle cx="32" cy="26" r="20" stroke="#00aaff" stroke-width="2" opacity="0.5"/>
+  <!-- 40pt ring -->
+  <circle cx="32" cy="26" r="14" stroke="#ffe600" stroke-width="2" opacity="0.6"/>
+  <!-- 50pt ring -->
+  <circle cx="32" cy="26" r="8"  stroke="#ff2266" stroke-width="2" opacity="0.7"/>
+  <!-- 100pt centre – filled magenta -->
+  <circle cx="32" cy="26" r="4"  fill="#ff00ff" opacity="0.9"/>
+  <circle cx="32" cy="26" r="4"  fill="#ff00ff">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Ball rolling at bottom -->
+  <circle cx="32" cy="54" r="7"
+    fill="url(#ballGrad)"
+    filter="url(#glow)"/>
+
+  <defs>
+    <radialGradient id="ballGrad" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#aabbff"/>
+      <stop offset="100%" stop-color="#6677cc"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+</svg>
